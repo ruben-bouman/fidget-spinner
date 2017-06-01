@@ -1,5 +1,5 @@
 float hoek = 0.0;
-float hoeksnelheid = 0.99;
+float hoeksnelheid = 0.10;
 void setup() {
   size(500, 500);
 }
@@ -8,16 +8,17 @@ void draw() {
 
   float x = 250;
   float x2 = x + (cos(hoek)*50);
-  float x3 = x + (cos(hoek+2.0943951)*50); 
-  float x4 = x + (cos(hoek + 4.1887902)*50);
+  float x3 = x + (cos(hoek+TWO_PI/3)*50); 
+  float x4 = x + (cos(hoek + TWO_PI*2/3)*50);
 
   float y= 250;
   float y2 = y + (sin(hoek)*50);
-  float y3 = y + (sin(hoek+ 2.0943951)*50);
-  float y4 = y +(sin(hoek+ 4.1887902)*50);
+  float y3 = y + (sin(hoek+ TWO_PI/3)*50);
+  float y4 = y +(sin(hoek+ TWO_PI*2/3)*50);
   if (mousePressed) { 
     hoek  += hoeksnelheid ;
-  }
+  
+}
 
   background(200);
 
@@ -50,3 +51,4 @@ void draw() {
   fill(0);
   ellipse(250, 250, 30, 30);
 }
+
