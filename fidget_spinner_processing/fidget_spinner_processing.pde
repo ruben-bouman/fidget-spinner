@@ -20,7 +20,7 @@ void draw() {
   
 }
 
-  background(200);
+  background(0);
 
 
 
@@ -29,26 +29,26 @@ void draw() {
   ellipse(x, y, 50, 50);
   fill(255, 0, 0);
   ellipse(x2, y2, 50, 50);
-  fill(255, 0, 0);
+  fill(255,0,0);
   ellipse(x3, y3, 50, 50);
-  fill(255, 0, 0);
+  fill(255,0,0);
   ellipse(x4, y4, 50, 50);
   fill(0);
   ellipse(x2, y2, 30, 30);
-  fill(0);    
+  fill(0,255,0);    
   ellipse(x3, y3, 30, 30);
-  fill(0);
+  fill(0,255,0);
   ellipse(x4, y4, 30, 30);
 
-  fill(200);
+  fill(0);
   ellipse(x3, y3, 15, 15);
-  fill(200);
+  fill(0);
   ellipse(x4, y4, 15, 15);
-  fill(0);
+  fill(0,255,0);
   ellipse(x2, y2, 30, 30);
-  fill(200);
-  ellipse(x2, y2, 15, 15);
   fill(0);
+  ellipse(x2, y2, 15, 15);
+  fill(0,255,0);
   ellipse(250, 250, 30, 30);
 }
 
